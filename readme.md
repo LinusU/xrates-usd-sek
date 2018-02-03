@@ -26,3 +26,7 @@ Get the exchange rate for the specified date. The return value is a number that 
 If the specific date requested is missing (e.g. due to bank holiday) the closest available date will be used.
 
 If the specified date falls outside the span of the provided data, a RangeError will be thrown.
+
+## Source
+
+The data is collected from Sweden's central bank, **Sveriges Riksbank**, via their official API.
