@@ -1,6 +1,6 @@
 {
   "name": "@xrates/usd-sek",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": "LinusU/xrates-usd-sek",
   "scripts": {
