@@ -1,0 +1,16 @@
+{
+  "name": "@xrates/usd-sek",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/xrates-usd-sek",
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "soap": "^0.23.0",
+    "standard": "^10.0.3"
+  }
+}
