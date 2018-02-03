@@ -9,7 +9,7 @@ const cache = new Map()
 function loadFile (name) {
   if (!cache.has(name)) {
     const raw = fs.readFileSync(path.join(__dirname, `data/${name}`))
-    const count = (raw.byteLength / 4) | 0
+    const count = (raw.byteLength / Float32Array.BYTES_PER_ELEMENT) | 0
 
     cache.set(name, new Float32Array(raw.buffer, raw.byteOffset, count))
   }
