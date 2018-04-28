@@ -28,7 +28,7 @@ async function main (year) {
   }
 
   const response = await client.getCrossRatesAsync(args)
-  const result = response.return.groups.series.find(s => s.seriesname === '1 USD = ? SEK')
+  const result = response[0].return.groups.series.find(s => s.seriesname === '1 USD = ? SEK')
   const data = new Map(result.resultrows.map(row => [row.date, Number(row.value)]))
 
   const output = new Float32Array(eachDay(start, end).map((date) => {
