@@ -21,7 +21,7 @@ exports.lookup = function (date) {
   const year = getYear(date)
 
   if (year < 2010) throw new RangeError('Exchange rates before 2010-01-01 aren\'t available')
-  if (year > 2017) throw new RangeError('Exchange rates after 2017-12-31 aren\'t available')
+  if (year > 2018) throw new RangeError('Exchange rates after 2018-12-31 aren\'t available')
 
   const data = loadFile(String(year))
   const offset = getDayOfYear(date) - 1
